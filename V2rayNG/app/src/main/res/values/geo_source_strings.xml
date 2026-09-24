@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="geo_source_list_help">Default rules are bundled from Loyalsoldier/v2ray-rules-dat. Edit a file’s HTTPS download URL, choose a repository preset, or import a local .dat file. Use Download to apply URL changes; failed updates keep the current file.</string>
+    <string name="geo_source_editor_help">Keep the filenames geosite.dat and geoip.dat: routing rules refer to these names. Use HTTPS URLs for Xray-compatible protobuf .dat files (not text rules). geosite.dat must include cn and geolocation-!cn; GeoIP files must include cn and private. Saving changes only the source URL; Download validates and replaces the file. For a local file, enter an HTTPS URL to enable future downloads.</string>
+    <string name="geo_source_invalid_name">Use a plain filename, without folders, path separators, or traversal characters.</string>
+    <string name="geo_source_https_required">Enter a valid HTTPS URL without credentials or a fragment.</string>
+    <string name="geo_source_saved">Source saved. Current files are unchanged. Use Download to apply the new source.</string>
+    <string name="geo_source_local">Local import · skipped by Download</string>
+    <string name="geo_source_local_skipped">No remote files to download. Local imports were left unchanged.</string>
+    <string name="geo_source_replace_preset">Use %1$s for the default rule files? This resets their custom URLs and local-only settings. Current files remain until a successful download.</string>
+    <string name="geo_source_confirm_import">Replace %1$s with this local file? It will be validated before replacing the current file. Automatic downloads for this file will be disabled until you edit its URL or choose a repository preset.</string>
+    <string name="geo_source_restart_needed">Rules changed. Return to the main screen to apply them; an active connection will restart.</string>
+    <string name="geo_source_update_failed">Failed (current files kept): %1$s</string>
+</resources>

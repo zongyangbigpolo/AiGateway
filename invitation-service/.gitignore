@@ -1,0 +1,6 @@
+data/
+.test-data-*/
+__pycache__/
+*.pyc
+*.sqlite
+*.sqlite-*

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gateway_attribution">AI Gateway 基于 2dust/v2rayNG 2.2.6 独立开发，采用 GNU GPL v3 许可证，保留原作者版权。网关功能修改日期：2026-09-24。请通过下方“源代码”查看源码与许可证。</string>
+    <string name="gateway_routing_description">首次启动自动加载内置的 Loyalsoldier GitHub 规则数据。默认 AI 和海外域名走所选代理，国内域名/IP 及未命中流量直连；已启用规则按顺序匹配。修改后返回主页将自动重连 VPN。自定义完整核心配置使用自身路由。</string>
+    <string name="gateway_manage_geodata">GitHub 规则源与更新</string>
+    <string name="gateway_geodata_init_failed">规则文件初始化失败，请到“GitHub 规则源与更新”替换文件；启动 VPN 时会显示错误。</string>
+    <string name="gateway_shutdown_failed">上一次连接未能完全停止。请先在 Android 设置中强行停止 AI Gateway，再重新连接。</string>
+    <string name="gateway_default_outbound">未命中规则的流量</string>
+    <string name="gateway_direct">直连（当前网络，不走代理）</string>
+    <string name="gateway_proxy">代理（使用选中的服务器节点）</string>
+    <string name="gateway_rule_count">已启用 %1$d 条 / 共 %2$d 条规则</string>
+    <string name="gateway_import_file">导入过滤文件（JSON）</string>
+    <string name="gateway_restore_rules">恢复内置 AI 规则</string>
+    <string name="gateway_import_confirm">导入 %1$d 条规则？将替换未锁定的规则，锁定规则保留在最前面。“未命中规则的流量”设置不变。空数组将移除全部未锁定规则。</string>
+    <string name="gateway_saved">已保存，返回主页后生效。</string>
+    <string name="gateway_import_failed">过滤文件导入失败</string>
+    <string name="gateway_import_error">现有规则未修改。\n\n%1$s\n\n请使用 UTF-8 JSON 数组（最大 1 MiB），支持 domain: / full: / geosite: 域名规则或 IP/CIDR / geoip: 规则，出口为 proxy / direct / block。二进制 .dat 文件请到“GitHub 规则源与更新”导入。</string>
+</resources>

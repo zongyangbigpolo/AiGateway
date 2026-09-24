@@ -1,0 +1,21 @@
+{
+	# Bearer tokens are in URL paths. Default structured error logs can include
+	# request URLs even when access logging is not enabled.
+	log {
+		output discard
+	}
+	servers {
+		max_header_size 16KB
+		timeouts {
+			read_header 5s
+			read_body 10s
+			write 15s
+			idle 30s
+		}
+	}
+}
+
+# Replace with your real DNS name; match --public-base-url in the service.
+invite.example.com {
+	reverse_proxy 127.0.0.1:18084
+}

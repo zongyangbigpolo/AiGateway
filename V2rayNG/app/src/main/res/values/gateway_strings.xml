@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gateway_attribution">AI Gateway is an independent fork of 2dust/v2rayNG 2.2.6, licensed under GNU GPL v3. Original authors retain their copyright. Gateway modifications: 2026-09-24. Source and license are available through Source code below.</string>
+    <string name="gateway_routing_description">AI Gateway loads bundled Loyalsoldier GitHub data on first launch. AI and overseas domains use the selected proxy; domestic domains/IPs and unmatched traffic are direct by default. Enabled rules are evaluated in order. Changes reconnect VPN when you return home. Custom full-core configurations use their own routing.</string>
+    <string name="gateway_manage_geodata">GitHub rule source and updates</string>
+    <string name="gateway_geodata_init_failed">Cannot initialize rule files. Open GitHub rule source and updates to replace them. VPN startup will report the error.</string>
+    <string name="gateway_shutdown_failed">Cannot fully stop the previous connection. Force stop AI Gateway in Android settings before reconnecting.</string>
+    <string name="gateway_default_outbound">Unmatched traffic</string>
+    <string name="gateway_direct">Direct (current network, no proxy)</string>
+    <string name="gateway_proxy">Proxy (selected server)</string>
+    <string name="gateway_rule_count">%1$d enabled / %2$d rules</string>
+    <string name="gateway_import_file">Import filter file (JSON)</string>
+    <string name="gateway_restore_rules">Restore built-in AI rules</string>
+    <string name="gateway_import_confirm">Import %1$d rules? This replaces unlocked rules; locked rules stay first. The unmatched-traffic setting is unchanged. An empty file array removes all unlocked rules.</string>
+    <string name="gateway_saved">Saved. Return to the home screen to apply.</string>
+    <string name="gateway_import_failed">Cannot import filter file</string>
+    <string name="gateway_import_error">Existing rules were not changed.\n\n%1$s\n\nUse a UTF-8 JSON array (up to 1 MiB) with domain: / full: / geosite: domains or IP/CIDR / geoip: rules and proxy / direct / block targets. Import binary .dat files in GitHub rule source and updates, not here.</string>
+</resources>

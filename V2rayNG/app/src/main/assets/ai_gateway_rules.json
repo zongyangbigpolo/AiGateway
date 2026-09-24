@@ -1,0 +1,65 @@
+[
+  {
+    "remarks": "Local network",
+    "outboundTag": "direct",
+    "ip": [
+      "10.0.0.0/8",
+      "172.16.0.0/12",
+      "192.168.0.0/16",
+      "127.0.0.0/8",
+      "169.254.0.0/16",
+      "::1/128",
+      "fc00::/7",
+      "fe80::/10"
+    ]
+  },
+  {
+    "remarks": "Local domains",
+    "outboundTag": "direct",
+    "domain": ["full:localhost", "domain:local", "domain:lan"]
+  },
+  {
+    "remarks": "OpenAI / ChatGPT",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:openai.com",
+      "domain:chatgpt.com",
+      "domain:oaistatic.com",
+      "domain:oaiusercontent.com"
+    ]
+  },
+  {
+    "remarks": "Anthropic / Claude",
+    "outboundTag": "proxy",
+    "domain": ["domain:anthropic.com", "domain:claude.ai", "domain:claude.com"]
+  },
+  {
+    "remarks": "Google Gemini",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:gemini.google.com",
+      "domain:aistudio.google.com",
+      "domain:generativelanguage.googleapis.com"
+    ]
+  },
+  {
+    "remarks": "Other AI services",
+    "outboundTag": "proxy",
+    "domain": ["domain:perplexity.ai", "domain:huggingface.co", "domain:hf.co"]
+  },
+  {
+    "remarks": "GitHub rules / domestic domains",
+    "outboundTag": "direct",
+    "domain": ["geosite:cn"]
+  },
+  {
+    "remarks": "GitHub rules / overseas domains",
+    "outboundTag": "proxy",
+    "domain": ["geosite:geolocation-!cn"]
+  },
+  {
+    "remarks": "GitHub rules / domestic IPs",
+    "outboundTag": "direct",
+    "ip": ["geoip:cn"]
+  }
+]

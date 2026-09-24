@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invitation_title">通过邀请码添加</string>
+    <string name="invitation_authorization_checking">正在校验邀请码授权…</string>
+    <string name="invitation_authorization_failed">邀请码授权缺失、已过期、已停用或无法联网校验，已停止网关。请兑换有效邀请码并选择其节点，确认网络正常后再连接。</string>
+    <string name="invitation_managed_subscription">邀请码订阅（自动管理）</string>
+    <string name="invitation_help">兑换邀请码后自动添加服务器订阅，不会修改内置过滤规则或当前连接。请回到主页选择导入的节点后连接。</string>
+    <string name="invitation_code">邀请码</string>
+    <string name="invitation_redeem">兑换并添加节点</string>
+    <string name="invitation_success">已向“%2$s”添加 %1$d 个节点。以后更新此订阅即可获取节点变更。</string>
+    <string name="invitation_error_service">此版本的邀请码服务配置有误，请联系服务提供者。</string>
+    <string name="invitation_error_code">邀请码应为 8 至 128 位字母、数字或短横线。</string>
+    <string name="invitation_error_rejected">邀请码或订阅无效、已过期、已停用或次数已用完，请联系服务提供者。</string>
+    <string name="invitation_error_limited">请求过于频繁，请稍等一分钟后重试。</string>
+    <string name="invitation_error_network">无法连接邀请码服务，请检查网络后重试。同一邀请码重试中断的兑换不会重复占用次数。</string>
+    <string name="invitation_error_response">服务返回的订阅无效或不包含支持的节点，现有节点和过滤规则未被替换。</string>
+    <string name="invitation_error_storage">订阅保存失败，请清理设备存储空间后使用同一邀请码重试。</string>
+</resources>

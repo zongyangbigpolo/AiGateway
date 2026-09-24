@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="geo_source_list_help">已内置 Loyalsoldier/v2ray-rules-dat 的默认规则。可编辑文件的 HTTPS 下载地址、选择仓库预设，或导入本地 .dat 文件。修改地址后请点击“下载”应用；更新失败将保留原文件。</string>
+    <string name="geo_source_editor_help">请保留 geosite.dat 和 geoip.dat 文件名，路由规则会引用这些名称。请填写兼容 Xray 的 protobuf .dat 文件的 HTTPS 地址（不支持文本规则）。geosite.dat 须包含 cn 和 geolocation-!cn；GeoIP 文件须包含 cn 和 private。保存只修改来源地址，“下载”会校验并替换文件。本地文件可通过填写 HTTPS 地址重新启用下载。</string>
+    <string name="geo_source_invalid_name">请使用不含文件夹、路径分隔符或路径穿越字符的普通文件名。</string>
+    <string name="geo_source_https_required">请输入有效的 HTTPS 地址，不含用户名、密码或片段标识。</string>
+    <string name="geo_source_saved">来源已保存，当前文件未改变。请点击“下载”应用新来源。</string>
+    <string name="geo_source_local">本地导入 · 下载时跳过</string>
+    <string name="geo_source_local_skipped">没有需要下载的远程文件，本地导入的文件保持不变。</string>
+    <string name="geo_source_replace_preset">将默认规则文件的来源切换为 %1$s？这会重置这些文件的自定义地址及“仅本地”设置。在成功下载前保留当前文件。</string>
+    <string name="geo_source_confirm_import">用此本地文件替换 %1$s？校验通过后才会替换当前文件。该文件将跳过下载，直到您编辑其地址或选择仓库预设。</string>
+    <string name="geo_source_restart_needed">规则已更新。返回主界面后应用；正在运行的连接将重启。</string>
+    <string name="geo_source_update_failed">更新失败（已保留当前文件）：%1$s</string>
+</resources>

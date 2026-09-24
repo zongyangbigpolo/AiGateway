@@ -1,0 +1,25 @@
+[Unit]
+Description=Portable invitation subscription service
+After=network.target
+
+[Service]
+Type=simple
+User=invitation
+Group=invitation
+WorkingDirectory=/opt/invitation-service
+ExecStart=/usr/bin/python3 /opt/invitation-service/server.py --db /var/lib/invitation-service/service.sqlite serve --host 127.0.0.1 --port 18084 --public-base-url https://invite.example.com
+Restart=on-failure
+RestartSec=5
+UMask=0077
+StateDirectory=invitation-service
+StateDirectoryMode=0700
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/invitation-service
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+LimitNOFILE=256
+
+[Install]
+WantedBy=multi-user.target

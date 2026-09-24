@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invitation_title">Add with invitation code</string>
+    <string name="invitation_authorization_checking">Checking invitation authorization…</string>
+    <string name="invitation_authorization_failed">Invitation authorization is missing, expired, revoked, or could not be checked online. Gateway stopped. Redeem a valid invitation, select its node, and check your network before reconnecting.</string>
+    <string name="invitation_managed_subscription">Invitation subscription (managed automatically)</string>
+    <string name="invitation_help">Redeem a code to add a server subscription. Your built-in filter rules and current connection are not changed. Select an imported server on the home screen to connect.</string>
+    <string name="invitation_code">Invitation code</string>
+    <string name="invitation_redeem">Redeem and add servers</string>
+    <string name="invitation_success">Added %1$d servers to %2$s. Update this subscription to receive future node changes.</string>
+    <string name="invitation_error_service">The invitation service is not configured correctly in this app. Contact your service provider.</string>
+    <string name="invitation_error_code">Enter a code with 8–128 letters, digits or hyphens.</string>
+    <string name="invitation_error_rejected">The invitation or subscription is invalid, expired, revoked, or fully used. Contact your operator.</string>
+    <string name="invitation_error_limited">Too many requests. Wait a minute before retrying.</string>
+    <string name="invitation_error_network">Cannot reach the invitation service. Check your network and retry. The same code can safely retry an interrupted redemption.</string>
+    <string name="invitation_error_response">The service returned an invalid subscription or no supported nodes. Existing nodes and filter rules were not replaced.</string>
+    <string name="invitation_error_storage">Cannot save the subscription. Free device storage and retry with the same code.</string>
+</resources>
