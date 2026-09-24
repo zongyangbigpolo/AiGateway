@@ -97,7 +97,7 @@ android {
             .forEach { output ->
                 val abi = output.getFilter("ABI") ?: "universal"
                 output.outputFileName =
-                    "AiGateway_${variant.versionName}_${variant.flavorName}_${variant.buildType.name}_${abi}.apk"
+                    "V2rayG_${variant.versionName}_${variant.flavorName}_${variant.buildType.name}_${abi}.apk"
             }
     }
 

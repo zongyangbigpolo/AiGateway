@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="gateway_attribution">AI Gateway is an independent fork of 2dust/v2rayNG 2.2.6, licensed under GNU GPL v3. Original authors retain their copyright. Gateway modifications: 2026-09-24. Source and license are available through Source code below.</string>
-    <string name="gateway_routing_description">AI Gateway loads bundled Loyalsoldier GitHub data on first launch. AI and overseas domains use the selected proxy; domestic domains/IPs and unmatched traffic are direct by default. Enabled rules are evaluated in order. Changes reconnect VPN when you return home. Custom full-core configurations use their own routing.</string>
+    <string name="gateway_attribution">V2rayG is an independent fork of 2dust/v2rayNG 2.2.6, licensed under GNU GPL v3. Original authors retain their copyright. Gateway modifications: 2026-09-24. Source and license are available through Source code below.</string>
+    <string name="gateway_routing_description">V2rayG loads bundled Loyalsoldier GitHub data on first launch. AI and overseas domains use the selected proxy; domestic domains/IPs and unmatched traffic are direct by default. Enabled rules are evaluated in order. Changes reconnect VPN when you return home. Custom full-core configurations use their own routing.</string>
     <string name="gateway_manage_geodata">GitHub rule source and updates</string>
     <string name="gateway_geodata_init_failed">Cannot initialize rule files. Open GitHub rule source and updates to replace them. VPN startup will report the error.</string>
-    <string name="gateway_shutdown_failed">Cannot fully stop the previous connection. Force stop AI Gateway in Android settings before reconnecting.</string>
+    <string name="gateway_shutdown_failed">Cannot fully stop the previous connection. Force stop V2rayG in Android settings before reconnecting.</string>
     <string name="gateway_default_outbound">Unmatched traffic</string>
     <string name="gateway_direct">Direct (current network, no proxy)</string>
     <string name="gateway_proxy">Proxy (selected server)</string>

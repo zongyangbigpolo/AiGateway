@@ -120,11 +120,11 @@ object AppConfig {
     const val GITHUB_RAW_URL = "https://raw.githubusercontent.com"
     const val GITHUB_DOWNLOAD_URL = "$GITHUB_URL/%s/releases/latest/download"
     const val ANDROID_PACKAGE_NAME_LIST_URL = "$GITHUB_RAW_URL/2dust/androidpackagenamelist/master/proxy.txt"
-    const val APP_URL = "$GITHUB_URL/zongyangbigpolo/AiGateway"
-    const val APP_API_URL = "https://api.github.com/repos/zongyangbigpolo/AiGateway/releases"
+    const val APP_URL = "$GITHUB_URL/zongyangbigpolo/V2rayG"
+    const val APP_API_URL = "https://api.github.com/repos/zongyangbigpolo/V2rayG/releases"
     const val APP_ISSUES_URL = "$APP_URL/issues"
     const val APP_WIKI_MODE = "$GITHUB_URL/2dust/v2rayNG/wiki/Mode"
-    const val APP_PRIVACY_POLICY = "$APP_URL/blob/main/PRIVACY.md"
+    const val APP_PRIVACY_POLICY = "$APP_URL/blob/HEAD/PRIVACY.md"
     const val TG_CHANNEL_URL = "https://t.me/github_2dust"
     const val DELAY_TEST_URL = "https://www.gstatic.com/generate_204"
     const val DELAY_TEST_URL2 = "https://www.google.com/generate_204"
@@ -177,7 +177,7 @@ object AppConfig {
 
     /** Notification channel IDs and names. */
     const val RAY_NG_CHANNEL_ID = "RAY_NG_M_CH_ID"
-    const val RAY_NG_CHANNEL_NAME = "AI Gateway Background Service"
+    const val RAY_NG_CHANNEL_NAME = "V2rayG Background Service"
 
     /** Protocols Scheme **/
     const val VMESS = "vmess://"

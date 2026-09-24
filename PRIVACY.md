@@ -1,6 +1,6 @@
-# AI Gateway privacy notes
+# V2rayG privacy notes
 
-AI Gateway is a GPL-3.0 Android fork of v2rayNG. Its VPN service routes network connections through user-selected proxy servers or directly through the current network, according to local routing rules.
+V2rayG is a GPL-3.0 Android fork of v2rayNG. Its VPN service routes network connections through user-selected proxy servers or directly through the current network, according to local routing rules.
 
 - Server profiles, subscriptions, settings and imported rules are stored on the device. Treat node links, credentials, QR codes and exported backups as sensitive.
 - The gateway does not add an AI prompt collection service, TLS interception or a developer-operated traffic relay. Proxy operators, DNS operators and destination services may observe information appropriate to their roles.

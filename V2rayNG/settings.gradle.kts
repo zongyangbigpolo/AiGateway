@@ -20,5 +20,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AiGateway"
+rootProject.name = "V2rayG"
 include(":app")

@@ -1,4 +1,4 @@
-name: Build AiGateway
+name: Build V2rayG
 
 on:
   workflow_dispatch:
@@ -171,7 +171,7 @@ jobs:
               original = element["outputFile"]
               if Path(original).name != original or not original.endswith(".apk"):
                   raise SystemExit("Unexpected APK output path.")
-              filename = f"AiGateway-{version}-debug-{abi}.apk"
+              filename = f"V2rayG-{version}-debug-{abi}.apk"
               target = destination / filename
               shutil.copyfile(source / original, target)
               checksums.append(f"{hashlib.sha256(target.read_bytes()).hexdigest()}  {filename}\n")
@@ -180,8 +180,8 @@ jobs:
           (destination / "SHA256SUMS").write_text("".join(sorted(checksums)))
           with open(os.environ["GITHUB_OUTPUT"], "a") as output:
               output.write(f"version={version}\n")
-              output.write(f"universal_file=AiGateway-{version}-debug-universal.apk\n")
-              output.write(f"artifact_name=AiGateway-{version}-debug-apks-{os.environ['GITHUB_RUN_ID']}-{os.environ['GITHUB_RUN_ATTEMPT']}\n")
+              output.write(f"universal_file=V2rayG-{version}-debug-universal.apk\n")
+              output.write(f"artifact_name=V2rayG-{version}-debug-apks-{os.environ['GITHUB_RUN_ID']}-{os.environ['GITHUB_RUN_ATTEMPT']}\n")
           PY
 
       - name: Upload debug APKs
@@ -201,7 +201,7 @@ jobs:
           SIGNING_MODE: ${{ steps.signing.outputs.mode || 'ephemeral' }}
         run: |
           {
-            echo '## AiGateway debug APK downloads'
+            echo '## V2rayG debug APK downloads'
             printf '\n[Download APK artifact ZIP](%s) (retained for 30 days).\n' "$ARTIFACT_URL"
             printf '\nFor any supported Android device, unzip and install `%s`.\n' "$UNIVERSAL_FILE"
             echo 'The ZIP also includes per-ABI APKs and SHA256SUMS.'
@@ -269,5 +269,5 @@ jobs:
           # Never overwrite an existing published version on a workflow rerun.
           gh release create "$TAG" "$UNIVERSAL_FILE" "$UNIVERSAL_FILE.sha256" \
             --verify-tag --prerelease --latest=false \
-            --title "AiGateway $VERSION — debug preview" \
+            --title "V2rayG $VERSION — debug preview" \
             --notes-file release-notes.txt

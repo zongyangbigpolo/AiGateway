@@ -1,4 +1,4 @@
-AiGateway bundled geodata
+V2rayG bundled geodata
 ========================
 
 The following upstream binary data files are redistributed without modification:
@@ -31,5 +31,5 @@ https://github.com/Loyalsoldier/v2ray-rules-dat/blob/5c20d2eb5a65b171816949010ed
 
 Copyright remains with the respective authors and data contributors.
 See the bundled GEODATA-LICENSE-GPL-3.0 and GEODATA-LICENSE-CC-BY-SA-4.0
-for full license terms. AiGateway does not claim ownership of these datasets.
+for full license terms. V2rayG does not claim ownership of these datasets.
 Binary checksums and source revisions are recorded in scripts/geodata-dependencies.env.

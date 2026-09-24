@@ -1,4 +1,4 @@
-# AI Gateway for Android
+# V2rayG for Android
 
 基于 [2dust/v2rayNG](https://github.com/2dust/v2rayNG) 的 Android 节点管理与自动分流客户端。它不是 AI 模型服务或 API Key 管理平台，而是通过 Android VPN + Xray，为手机应用决定哪些连接走代理、哪些连接通过当前网络直连。
 
@@ -12,7 +12,7 @@
 - 支持从手机文件选择器导入 UTF-8 JSON 域名/IP 规则，先校验、确认，再替换；支持恢复内置规则。
 - 规则可编辑、启停、排序、锁定；未命中策略可切换为直连或代理。锁定规则在导入时保留且优先匹配。
 - 默认启用核心 DNS 分流、域名嗅探和原版「追加 HTTP 代理至 VPN」选项（Android 10+），使支持的浏览器按明确的目标域名分流；可在设置中关闭，已保存的选择不会被覆盖。正常代理节点的延迟测试仍测试代理，而不是直连出口。
-- 独立包名 `io.github.zongyangbigpolo.aigateway`，可与原版 v2rayNG 共存。保留原代码命名空间以减少无关变更。
+- 独立包名 `io.github.zongyangbigpolo.aigateway`，可与原版 v2rayNG 共存。改名为 V2rayG 后继续保留原包名及数据，使用相同签名覆盖安装时无需重新兑换邀请码。保留原代码命名空间以减少无关变更。
 
 ## 使用
 
@@ -56,7 +56,7 @@ cd V2rayNG
 ```sh
 runuser -u aigateway-invite -- python3 /opt/ai-gateway-invitation/server.py \
   --db /var/lib/ai-gateway-invitation/service.sqlite \
-  group customers --name "AI Gateway" --file /var/lib/ai-gateway-invitation/customer-nodes.txt
+  group customers --name "V2rayG" --file /var/lib/ai-gateway-invitation/customer-nodes.txt
 
 runuser -u aigateway-invite -- python3 /opt/ai-gateway-invitation/server.py \
   --db /var/lib/ai-gateway-invitation/service.sqlite \
@@ -167,7 +167,7 @@ APK 位于 `V2rayNG/app/build/outputs/apk/playstore/debug/`。GitHub Actions 构
 
 ### 从 GitHub 下载安装包
 
-打开 [Actions → Build AiGateway](https://github.com/zongyangbigpolo/AiGateway/actions/workflows/build.yml)，选择成功的运行，在 **Artifacts** 下载 `AiGateway-版本-debug-apks-…`，解压后安装 `AiGateway-版本-debug-universal.apk`。同时提供四种 ABI 专用包和 `SHA256SUMS`；APK 保存 30 天，测试报告保存 14 天。
+打开 [Actions → Build V2rayG](https://github.com/zongyangbigpolo/V2rayG/actions/workflows/build.yml)，选择成功的运行，在 **Artifacts** 下载 `V2rayG-版本-debug-apks-…`，解压后安装 `V2rayG-版本-debug-universal.apk`。同时提供四种 ABI 专用包和 `SHA256SUMS`；APK 保存 30 天，测试报告保存 14 天。
 
 每次分支推送、PR 和 `v*` 标签推送都会构建；默认分支包含工作流后也支持 **Run workflow** 手动触发，接口地址仅由运营方在构建参数中指定。推送与 APP 版本一致的标签（当前 `v0.1.0`）会将通用调试 APK 发布到 GitHub 预发布版本，方便长期下载；不会覆盖已发布版本。
 
@@ -180,6 +180,6 @@ CI 运行网关分流、默认数据安装、规则源更新和连接生命周�
 ## 来源与许可证
 
 派生自 v2rayNG **2.2.6**，固定上游提交 [`15b4fff8e45da9bc0acaa5cc1d80a1d3531e8712`](https://github.com/2dust/v2rayNG/commit/15b4fff8e45da9bc0acaa5cc1d80a1d3531e8712)。
-2026-09-24 的 AI Gateway 修改包括应用标识、默认 AI 规则、规则文件导入、默认出口及 DNS 分流、回归测试和构建工作流。
+2026-09-24 的 V2rayG 修改包括应用标识、默认 AI 规则、规则文件导入、默认出口及 DNS 分流、回归测试和构建工作流。
 
 继续采用 [GNU GPL v3](LICENSE)，保留上游版权和许可声明；[上游 README](README.upstream.md) 为来源记录。第三方组件按各自许可证分发。本项目不是 2dust 官方发行版。
